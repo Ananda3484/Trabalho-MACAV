@@ -24,12 +24,11 @@ Exemplo comum:
    /img
    /css
 index.html
-catalogo.html
-detalhes.html
-contato.html
+anunciar.html
+caasto.html
+login.html
+cadastrodeimovel.html
 ```
-
-*(Ajuste conforme suas páginas verdadeiras.)*
 
 ## ▶️ Como visualizar
 
