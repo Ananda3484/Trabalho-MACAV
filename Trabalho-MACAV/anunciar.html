@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anunciar Imóvel - MACAV</title>
+    <link rel="stylesheet" href="../Trabalho-MACAV/Assets/css/style.css">
+    <link rel="stylesheet" href="../Trabalho-MACAV/Assets/css/style2.css">
+</head>
+
+<body>
+
+    <!-- Header mesmo padrão -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">🏠</div>
+                    <span class="logo-text">MACAV</span>
+                </a>
+                <nav>
+                    <a href="index.html#inicio">Início</a>
+                    <a href="index.html#imoveis">Imóveis</a>
+                    <a href="anunciar.html" class="active">Anunciar</a>
+                    <a href="index.html#contato">Contato</a>
+                    <a href="#" class="btn btn-outline">Entrar</a>
+                    <a href="#" class="btn btn-primary">Cadastrar Imóvel</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo da página -->
+    <section class="announce-page">
+        <div class="container">
+
+            <h1 class="announce-title-page">Cadastrar Novo Imóvel</h1>
+            <p class="announce-subtitle-page">Preencha as informações abaixo e envie seu anúncio.</p>
+
+            <div class="announce-form-grid">
+
+                <!-- CARD 1: Informações -->
+                <div class="announce-form-card">
+                    <div class="announce-icon">🏠</div>
+                    <h2 class="announce-card-title">Informações do Imóvel</h2>
+
+                    <label>Título do anúncio</label>
+                    <input type="text" placeholder="Ex: Casa ampla com jardim">
+
+                    <label>Tipo do imóvel</label>
+                    <select>
+                        <option>Casa</option>
+                        <option>Apartamento</option>
+                        <option>Chácara</option>
+                        <option>Terreno</option>
+                    </select>
+
+                    <label>Preço (R$)</label>
+                    <input type="number" placeholder="Ex: 350000">
+
+                    <label>Descrição</label>
+                    <textarea placeholder="Detalhes do imóvel, acabamento, características, etc."></textarea>
+                </div>
+
+                <!-- CARD 2: Localização -->
+                <div class="announce-form-card">
+                    <div class="announce-icon">📍</div>
+                    <h2 class="announce-card-title">Localização</h2>
+
+                    <label>Cidade</label>
+                    <input type="text" placeholder="Ex: Barracão">
+
+                    <label>Bairro</label>
+                    <input type="text" placeholder="Ex: Centro">
+
+                    <label>Endereço completo</label>
+                    <input type="text" placeholder="Rua, número, complemento">
+                </div>
+
+                <!-- CARD 3: Fotos -->
+                <div class="announce-form-card">
+                    <div class="announce-icon">🖼️</div>
+                    <h2 class="announce-card-title">Fotos do Imóvel</h2>
+
+                    <label>Selecione imagens</label>
+                    <input type="file" multiple accept="image/*">
+
+                    <p class="announce-hint">Você pode enviar até 5 fotos. Formatos aceitos: JPG, PNG.</p>
+                </div>
+
+                <!-- CARD 4: Extras -->
+                <div class="announce-form-card">
+                    <div class="announce-icon">⭐</div>
+                    <h2 class="announce-card-title">Opções Extras</h2>
+
+                    <label><input type="checkbox"> Anúncio Destaque</label>
+                    <label><input type="checkbox"> Permitir contato direto</label>
+                    <label><input type="checkbox"> Exibir no catálogo regional</label>
+                </div>
+
+            </div>
+
+            <button class="btn btn-primary publish-btn">Publicar Anúncio</button>
+
+        </div>
+    </section>
+
+    <script>
+    document.querySelector(".publish-btn").addEventListener("click", function (e) {
+        e.preventDefault(); // impede recarregar a página
+
+        alert("Imóvel anunciado com sucesso!");
+
+        // redireciona para a página inicial
+        window.location.href = "index.html";
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - MACAV</title>
+    <link rel="stylesheet" href="../Trabalho-MACAV/Assets/css/style.css">
+    <link rel="stylesheet" href="../Trabalho-MACAV/Assets/css/style2.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🏠</div>
+                <span class="logo-text">MACAV</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="auth-page">
+    <div class="container">
+
+        <div class="auth-card">
+            <h1 class="auth-title">Criar Conta</h1>
+            <p class="auth-subtitle">Preencha seus dados para começar</p>
+
+            <label>Nome completo</label>
+            <input type="text" placeholder="Seu nome">
+
+            <label>Email</label>
+            <input type="email" placeholder="seuemail@email.com">
+
+            <label>Senha</label>
+            <input type="password" placeholder="Crie uma senha">
+
+            <label>Confirmar senha</label>
+            <input type="password" placeholder="Repita a senha">
+
+            <button class="btn btn-primary auth-btn" id="cadastro-btn">Cadastrar</button>
+
+            <p class="auth-switch">Já tem conta? <a href="login.html">Entrar</a></p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+document.getElementById("cadastro-btn").addEventListener("click", function(e) {
+    e.preventDefault();
+    alert("Conta criada com sucesso!");
+    window.location.href = "login.html";
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Trabalho-MACAV/Assets/css/style.css">
+    <link rel="stylesheet" href="../Trabalho-MACAV/Assets/css/style2.css">
+    <title>MACAV - Plataforma de Imóveis e Chácaras</title>
+    <meta name="description" content="Encontre ou anuncie imóveis e chácaras com facilidade. Plataforma moderna, intuitiva e completa para compra e venda de propriedades.">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <div class="logo-icon">🏠</div>
+                    <span class="logo-text">MACAV</span>
+                </a>
+                <nav>
+                    <a href="#inicio">Início</a>
+                    <a href="#imoveis">Imóveis</a>
+                    <a href="#anunciar">Anunciar</a>
+                    <a href="#contato">Contato</a>
+                    <a href="#" class="btn btn-primary">Cadastrar Imóvel</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>
+                    Encontre o Imóvel dos seus 
+                    <span class="hero-gradient-text">Sonhos</span>
+                </h1>
+                <p>Casas, apartamentos e chácaras em um só lugar. Simples, rápido e confiável.</p>
+
+                <div class="search-box">
+                    <div class="search-tabs">
+                        <button class="active">Comprar</button>
+                        <button>Alugar</button>
+                    </div>
+                    <form class="search-form">
+                        <input type="text" placeholder="Cidade, bairro ou região" class="search-input">
+                        <button type="submit" class="btn btn-primary">🔍 Buscar</button>
+                    </form>
+                </div>
+
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Imóveis disponíveis</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1.200+</h3>
+                        <p>Clientes satisfeitos</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>15+</h3>
+                        <p>Cidades atendidas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+        <div class="container">
+            <h2>Filtrar Imóveis</h2>
+            <div class="filter-grid">
+                <select class="filter-select">
+                    <option value="">Tipo de imóvel</option>
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                    <option value="chacara">Chácara</option>
+                    <option value="terreno">Terreno</option>
+                </select>
+                <select class="filter-select">
+                    <option value="">Estado</option>
+                    <option value="Paraná">Barracão</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                </select>
+                <input type="number" placeholder="Preço mínimo" class="filter-input">
+                <input type="number" placeholder="Preço máximo" class="filter-input">
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Catalog -->
+    <section id="imoveis" class="catalog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Imóveis em Destaque</h2>
+                <p>Explore as melhores oportunidades disponíveis</p>
+            </div>
+
+            <div class="property-grid">
+
+                <!-- CARD 1 -->
+                <article class="property-card">
+                    <div class="property-image">
+                        <img src="img/property-1.jpg" alt="Casa Moderna">
+                        <span class="property-badge">Casa</span>
+                        <button class="property-favorite">❤️</button>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Casa Moderna com Jardim</h3>
+                        <div class="property-location">📍 Barracão, PR</div>
+                        <div class="property-features">
+                            <span>🛏️ 4 quartos</span>
+                            <span>🚿 3 banheiros</span>
+                            <span>📐 280m²</span>
+                        </div>
+                        <div class="property-footer">
+                            <div class="property-price">R$ 850.000</div>
+                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 2 -->
+                <article class="property-card">
+                    <div class="property-image">
+                        <img src="img/property-2.jpg" alt="Chácara com Piscina">
+                        <span class="property-badge">Chácara</span>
+                        <button class="property-favorite">❤️</button>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Chácara com Piscina</h3>
+                        <div class="property-location">📍 Dionísio Cerqueira, SC</div>
+                        <div class="property-features">
+                            <span>🛏️ 5 quartos</span>
+                            <span>🚿 4 banheiros</span>
+                            <span>📐 5.000m²</span>
+                        </div>
+                        <div class="property-footer">
+                            <div class="property-price">R$ 1.200.000</div>
+                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 3 -->
+                <article class="property-card">
+                    <div class="property-image">
+                        <img src="img/property-3.jpg" alt="Apartamento Luxuoso">
+                        <span class="property-badge">Apartamento</span>
+                        <button class="property-favorite">❤️</button>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Apartamento Luxuoso</h3>
+                        <div class="property-location">📍 Centro, Barracão</div>
+                        <div class="property-features">
+                            <span>🛏️ 3 quartos</span>
+                            <span>🚿 2 banheiros</span>
+                            <span>📐 180m²</span>
+                        </div>
+                        <div class="property-footer">
+                            <div class="property-price">R$ 650.000</div>
+                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 4 -->
+                <article class="property-card">
+                    <div class="property-image">
+                        <img src="img/property-4..png" alt="Casa Condomínio">
+                        <span class="property-badge">Casa</span>
+                        <button class="property-favorite">❤️</button>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Casa em Condomínio Fechado</h3>
+                        <div class="property-location">📍 Bernardo Sayão, PR</div>
+                        <div class="property-features">
+                            <span>🛏️ 3 quartos</span>
+                            <span>🚿 2 banheiros</span>
+                            <span>📐 240m²</span>
+                        </div>
+                        <div class="property-footer">
+                            <div class="property-price">R$ 720.000</div>
+                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 5 -->
+                <article class="property-card">
+                    <div class="property-image">
+                        <img src="img/property-5..png" alt="Chácara Montanhas">
+                        <span class="property-badge">Chácara</span>
+                        <button class="property-favorite">❤️</button>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Chácara Vista para Montanhas</h3>
+                        <div class="property-location">📍 Rural, Barracão</div>
+                        <div class="property-features">
+                            <span>🛏️ 4 quartos</span>
+                            <span>🚿 3 banheiros</span>
+                            <span>📐 8.000m²</span>
+                        </div>
+                        <div class="property-footer">
+                            <div class="property-price">R$ 980.000</div>
+                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 6 -->
+                <article class="property-card">
+                    <div class="property-image">
+                        <img src="img/property-6..jpeg" alt="Cobertura">
+                        <span class="property-badge">Apartamento</span>
+                        <button class="property-favorite">❤️</button>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Apartamento Cobertura</h3>
+                        <div class="property-location">📍 Centro, Dionísio Cerqueira</div>
+                        <div class="property-features">
+                            <span>🛏️ 4 quartos</span>
+                            <span>🚿 3 banheiros</span>
+                            <span>📐 220m²</span>
+                        </div>
+                        <div class="property-footer">
+                            <div class="property-price">R$ 890.000</div>
+                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div style="text-align: center;">
+                <a href="#" class="btn btn-outline">Ver Todos os Imóveis</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="anunciar" class="announce-section">
+    <div class="container">
+        <h2 class="section-title">Por que Anunciar no ImovelConnect?</h2>
+        <p class="section-subtitle">Tenha controle total, visibilidade e suporte para vender ou alugar seu imóvel com rapidez.</p>
+
+        <div class="announce-grid">
+
+            <div class="announce-card">
+                <div class="announce-icon">💬</div>
+                <h3 class="announce-title">Atendimento Personalizado</h3>
+                <p class="announce-text">Nossa equipe acompanha você do início ao fim para garantir que seu anúncio alcance o público certo.</p>
+            </div>
+
+            <div class="announce-card">
+                <div class="announce-icon">📊</div>
+                <h3 class="announce-title">Relatórios de Desempenho</h3>
+                <p class="announce-text">Acompanhe visualizações, contatos recebidos e desempenho geral do seu anúncio em tempo real.</p>
+            </div>
+
+            <div class="announce-card">
+                <div class="announce-icon">📝</div>
+                <h3 class="announce-title">Gestão Fácil de Anúncios</h3>
+                <p class="announce-text">Edite fotos, atualize preços e altere informações do seu imóvel com poucos cliques.</p>
+            </div>
+
+            <div class="announce-card">
+                <div class="announce-icon">⭐</div>
+                <h3 class="announce-title">Anúncio Destaque</h3>
+                <p class="announce-text">Opcional de impulsionamento para que seu imóvel apareça nos primeiros resultados.</p>
+            </div>
+
+            <div class="announce-card">
+                <div class="announce-icon">🔒</div>
+                <h3 class="announce-title">Segurança Garantida</h3>
+                <p class="announce-text">Seus dados e informações de contato são protegidos com tecnologia avançada.</p>
+            </div>
+
+            <div class="announce-card">
+                <div class="announce-icon">🤝</div>
+                <h3 class="announce-title">Conexão Direta com Interessados</h3>
+                <p class="announce-text">Receba mensagens e propostas diretamente de compradores e locatários.</p>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="anunciar.html" class="btn btn-primary">Começar meu Anúncio Agora</a>
+        </div>
+        </div>
+    </section>
+        <div class="footer-contact-extra">
+
+        <div class="contact-item">
+            <span class="contact-icon">⏰</span>
+            <div>
+                <strong>Horário de Atendimento</strong>
+                <p>Seg a Sex: 08h às 18h</p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <span class="contact-icon">💬</span>
+            <div>
+                <strong>Atendimento via WhatsApp</strong>
+                <p>(49) 9 9999-9999</p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+                <strong>Escritório</strong>
+                <p>Av. Principal, 450 - Centro<br>Barracão, PR</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

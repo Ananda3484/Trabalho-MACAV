@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MACAV</title>
+    <link rel="stylesheet" href="../Trabalho-MACAV/Assets/css/style.css">
+    <link rel="stylesheet" href="../Trabalho-MACAV/Assets/css/style2.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🏠</div>
+                <span class="logo-text">MACAV</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="auth-page">
+    <div class="container">
+
+        <div class="auth-card">
+            <h1 class="auth-title">Entrar</h1>
+            <p class="auth-subtitle">Acesse sua conta para continuar</p>
+
+            <label>Email</label>
+            <input type="email" placeholder="seuemail@email.com">
+
+            <label>Senha</label>
+            <input type="password" placeholder="Digite sua senha">
+
+            <button class="btn btn-primary auth-btn" id="login-btn">Entrar</button>
+
+            <p class="auth-switch">Não tem conta? <a href="cadastro.html">Criar conta</a></p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+document.getElementById("login-btn").addEventListener("click", function(e) {
+    e.preventDefault();
+    alert("Login realizado com sucesso!");
+    window.location.href = "index2.html";
+});
+</script>
+
+</body>
+</html>

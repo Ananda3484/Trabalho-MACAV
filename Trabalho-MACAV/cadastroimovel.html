@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Imóvel - MACAV</title>
+    <link rel="stylesheet" href="../Trabalho-MACAV/Assets/css/style.css">
+    <link rel="stylesheet" href="../Trabalho-MACAV/Assets/css/style2.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho igual ao site -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">🏠</div>
+                    <span class="logo-text">MACAV</span>
+                </a>
+                <nav>
+                    <a href="index.html#inicio">Início</a>
+                    <a href="index.html#imoveis">Imóveis</a>
+                    <a href="anunciar.html">Anunciar</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo da página -->
+    <section class="auth-page">
+        <div class="container">
+
+            <div class="auth-card" style="max-width: 650px;">
+                <h1 class="auth-title">Cadastrar Imóvel</h1>
+                <p class="auth-subtitle">Preencha os dados para registrar um novo imóvel</p>
+
+                <!-- FORMULÁRIO -->
+                <form id="cadastro-imovel-form">
+
+                    <h3 style="margin-top: 10px; color:#1f4733;">📌 Informações Gerais</h3>
+
+                    <label>Título do Imóvel</label>
+                    <input type="text" placeholder="Ex: Casa moderna com piscina" required>
+
+                    <label>Tipo de Imóvel</label>
+                    <select required>
+                        <option value="">Selecione</option>
+                        <option>Casa</option>
+                        <option>Apartamento</option>
+                        <option>Chácara</option>
+                        <option>Terreno</option>
+                    </select>
+
+                    <label>Preço (R$)</label>
+                    <input type="number" min="0" placeholder="Ex: 350000" required>
+
+
+                    <h3 style="margin-top: 25px; color:#1f4733;">📍 Localização</h3>
+
+                    <label>Cidade</label>
+                    <input type="text" placeholder="Ex: Barracão" required>
+
+                    <label>Bairro</label>
+                    <input type="text" placeholder="Ex: Centro" required>
+
+                    <label>Endereço completo</label>
+                    <input type="text" placeholder="Rua, número, complemento" required>
+
+
+                    <h3 style="margin-top: 25px; color:#1f4733;">📝 Descrição</h3>
+
+                    <label>Descrição do Imóvel</label>
+                    <textarea placeholder="Detalhes, características, comodidades..." required></textarea>
+
+
+                    <h3 style="margin-top: 25px; color:#1f4733;">🖼️ Fotos</h3>
+
+                    <label>Selecione até 5 fotos</label>
+                    <input type="file" accept="image/*" multiple>
+
+                    <p style="font-size: 0.85rem; color:#666;">Formatos aceitos: JPG, PNG.</p>
+
+
+                    <button class="btn btn-primary auth-btn" id="btn-cadastrar-imovel">Cadastrar Imóvel</button>
+
+                </form>
+
+                <p class="auth-switch">Voltar para <a href="index.html">Página Inicial</a></p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <script>
+        document.getElementById("btn-cadastrar-imovel").addEventListener("click", function (e) {
+            e.preventDefault();
+
+            alert("Imóvel cadastrado com sucesso!");
+            window.location.href = "index.html";
+        });
+    </script>
+
+</body>
+
+</html>

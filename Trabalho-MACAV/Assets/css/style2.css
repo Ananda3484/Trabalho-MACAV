@@ -1,0 +1,140 @@
+
+.announce-title-page {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #1f4733;
+    margin-bottom: 10px;
+}
+
+.announce-subtitle-page {
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+.announce-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.announce-form-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.announce-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.announce-card-title {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #1f4733;
+}
+
+.announce-form-card label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.announce-form-card input,
+.announce-form-card select,
+.announce-form-card textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #dfe6e3;
+    font-size: 1rem;
+}
+
+.announce-form-card textarea {
+    height: 120px;
+    resize: none;
+}
+
+.announce-hint {
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.publish-btn {
+    width: 100%;
+    margin-top: 40px;
+    padding: 18px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.auth-page {
+    padding: 80px 0;
+    background: #f5faf7;
+    display: flex;
+    justify-content: center;
+}
+
+.auth-card {
+    background: #fff;
+    max-width: 420px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.auth-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #1f4733;
+    margin-bottom: 10px;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.auth-card label {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #dfe6e3;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 20px;
+    color: #444;
+}
+
+.auth-switch a {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+}
