@@ -1,0 +1,96 @@
+. Plano de Qualidade e Manutenção
+. Estratégia de Teste
+A abordagem utilizada será caixa-preta, focando na validação das funcionalidades do sistema pela perspectiva do usuário final.
+Essa estratégia garante testes alinhados aos objetivos do sistema: simplicidade, clareza e boa experiência de uso.
+
+. Organização
+Vinicius: criação dos casos de teste, validação de requisitos.
+Arthur: correção de erros no back-end.
+Matheus: ajustes no front-end e UX.
+Ananda: correções relacionadas ao banco de dados.
+
+. Recursos Necessários
+Software: GitHub, Trello, VSCode, PostgreSQL, navegadores, Postman.
+Hardware: notebooks da equipe.
+Ambiente: servidor local/container para testes.
+
+. Flexibilidade do Planejamento
+Atualização dos casos de teste a cada sprint.
+Inclusão de novos testes conforme surgem funcionalidades.
+Correções são priorizadas no Kanban e discutidas nas reuniões semanais.
+
+. Casos de Teste
+✔️ Caso de Teste 1 – Cadastro de Imóvel
+Funcionalidade testada: cadastro de imóveis com fotos e informações completas.
+Dados de entrada/saída:
+Entrada: título, descrição, fotos, localização, preço, tipo, área.
+Saída: anúncio criado e exibido no catálogo.
+Critérios de sucesso:
+Imóvel salvo corretamente.
+Fotos carregadas.
+Anúncio visível no catálogo.
+Processo:
+Logar como vendedor.
+Preencher formulário.
+Enviar.
+Verificar no catálogo.
+Impacto no projeto: impede vendas e prejudica usabilidade se falhar.
+
+✔️ Caso de Teste 2 – Busca e Filtros
+Funcionalidade testada: busca eficiente com filtros.
+Entrada: filtro selecionado.
+Saída: lista filtrada.
+Critérios de sucesso:
+Retornar apenas itens compatíveis.
+Interface responsiva.
+Impacto: prejudica experiência do comprador.
+
+✔️ Caso de Teste 3 – Favoritar Imóvel
+Funcionalidade testada: salvar imóveis na lista do usuário.
+Entrada: clicar em “favoritar”.
+Saída: item salvo na lista.
+Critérios de sucesso:
+Ícone muda de estado.
+Favoritos persistem após atualizar.
+Impacto: afeta engajamento.
+
+. Documentação de Erros (GitHub Issues)
+Padrão de relatório:
+[Título do bug]
+Descrição
+Passos para reproduzir
+Comportamento observado
+Comportamento esperado
+Evidências (prints)
+Responsável
+Prioridade
+
+. Análise dos Resultados
+Ao fim de cada sprint é gerado um resumo contendo:
+Total de testes realizados
+Testes aprovados
+Testes reprovados
+Bugs identificados
+Status das correções
+
+. Impacto no Projeto
+Falhas afetam diretamente:
+Cumprimento das sprints
+Prioridade do backlog
+Estabilidade das entregas
+Qualidade final do produto
+
+📁 Estrutura Recomendada do Repositório
+📦 raiz-do-projeto
+├── 📁 src
+│ ├── front-end/
+│ ├── back-end/
+│ └── database/
+│
+├── 📁 docs
+│ ├── diagramas/
+│ └── requisitos/
+│
+├── README.md
+├── LICENSE
+└── .gitignore
